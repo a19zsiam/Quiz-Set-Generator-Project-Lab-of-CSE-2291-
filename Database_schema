@@ -1,0 +1,26 @@
+#1st part
+
+CREATE DATABASE QuizDB;
+
+USE QuizDB;
+
+CREATE TABLE questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question_text VARCHAR(255),
+    option_a VARCHAR(100),
+    option_b VARCHAR(100),
+    option_c VARCHAR(100),
+    option_d VARCHAR(100),
+    correct_idx INT
+);
+
+
+#2nd part
+
+INSERT INTO questions (question_text, option_a, option_b, option_c, option_d, correct_idx)
+VALUES
+("What is 2 + 2?", "3", "4", "5", "2", 1),
+("Capital of France?", "Berlin", "Madrid", "Paris", "Rome", 2),
+("Which planet is known as the Red Planet?", "Earth", "Venus", "Mars", "Jupiter", 2),
+("Largest ocean in the world?", "Indian", "Atlantic", "Arctic", "Pacific", 3),
+("Who developed the theory of relativity?", "Newton", "Einstein", "Galileo", "Tesla", 1);
